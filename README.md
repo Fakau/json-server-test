@@ -1,4 +1,4 @@
-# JSON Server
+# JSON Server Test
 
 This project uses a JSON server to simulate a REST API. The server provides endpoints for posts, comments, and profile data.
 
@@ -13,8 +13,8 @@ This project uses a JSON server to simulate a REST API. The server provides endp
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Fakau/json-server-test.git
+    cd json-server-test
     ```
 
 2. Install JSON Server globally:
@@ -56,8 +56,19 @@ This project uses a JSON server to simulate a REST API. The server provides endp
 The `data.json` file contains the following example data:
 
 - **Posts**
+- **Comments**
+- **Profile**
   ```json
-  [
+  {
+  "posts": [
     { "id": "1", "title": "a title", "views": 100 },
     { "id": "2", "title": "another title", "views": 200 }
-  ]
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
